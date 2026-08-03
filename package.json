@@ -1,0 +1,17 @@
+{
+  "name": "projeto01",
+  "version": "1.0.0",
+  "description": "Exercicios com HTML e CSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "front-end",
+    "exercicios"
+  ],
+  "author": "Thiago henrique",
+  "license": "ISC"
+}

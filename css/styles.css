@@ -1,0 +1,36 @@
+/* seletor header --> elemento HTMl (tag)  */
+
+header{
+
+    background-color: rgb(172, 2, 33);
+    width: 100vw; 
+    height: 20vh;
+
+}
+/* seletor de TAG (main) */
+main{
+
+    background-color: rgb(211, 202, 202);
+    /* VW - view width / VH - view higth  */
+    width: 100vw;
+    height: 70vh;
+}
+
+
+footer{
+    background-color: rgb(172, 2, 33);
+    color: #fff;
+    width: 100vw;
+    height: 10vh;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+a{
+
+    text-decoration: none ; /* remover a decoração do texto (underline) */
+    color: #fff; 
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    
+}
