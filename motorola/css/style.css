@@ -1,24 +1,40 @@
 /* Reset CSS */
 *{
-    margin: 50;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .main-conteiner{
     display: flex;
+    
 }
 
 h1{
     font-family: Arial;
     font-size: 70px;
-    margin: 30px;
+    margin: 20px;
+    justify-content: center;
+}
+
+span{
+    font-family: arial;
+    font-size: 45px;
+    color: rgb(0, 174, 255);
+    margin: 20px;
+    justify-content: center;
+
 }
 
 h2{
     font-family: arial;
-    font-size: 30px;
-    color: rgb(0, 174, 255);
-    margin: 20px;
+    font-size: 45px;
+    margin: 60px;
+    justify-content: center;
 
+}
+p{
+    font-family: Arial;
+    font-size: 20px;
+    justify-content: center;
 }
