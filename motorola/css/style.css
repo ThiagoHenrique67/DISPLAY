@@ -3,40 +3,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 
 .main-conteiner{
+    height: 100vh;
     display: flex;
-
-}
-
-h1{
-    font-family: Arial;
-    font-size: 70px;
-    margin: 20px;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
+
 }
 
-span{
-    font-family: arial;
-    font-size: 45px;
-    color: rgb(0, 174, 255);
-    margin: 20px;
+.main-conteiner sup{
+    font-size: 10px;
+    color: blue;
+}
+
+.main-conteiner__left img{
+    width: 300px;
+    /* quando eu coloco a altura na imagem, a largura é automatica (proporção) */
+    height: 450px;
+    
+}
+
+.main-conteiner__right{
+    /* border: 2px solid red; */
+    width: 650px;
+    height: 450px;
+}
+
+.main-conteiner__right--title{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    border: 2px solid;
+    height: 150px;
+    
+}
+
+.main-conteiner__right--subtitle{
+    color: #32c6f7;
+    margin-top: 5px;
+}
+
+.main-conteiner__right--bateria{
+    border: 2px solid blue;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px
 
 }
 
-h2{
-    font-family: arial;
-    font-size: 45px;
-    margin: 20px;
-    justify-content: center;
+.main-conteiner__right--bateria h2{
+    margin-bottom: 15px;
 
 }
-p{
-    font-family: Arial;
-    font-size: 20px;
-    width: 50%;
-    margin: 20px;
+
+.main-conteiner__right--charge{
+    border: 2px solid greenyellow;
+    height: 150px;
+    flex-direction: column;
     justify-content: center;
 }
