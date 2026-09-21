@@ -81,3 +81,25 @@ li{
     /* sem decoração na lista */
     list-style: none;
 }
+
+
+.sumario details{
+    border: 2px solid #fff;
+    width: 50%;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.sumario summary{
+    background: #fff;
+    color: blue;
+    height: 25px;
+}
+
+.sumario p{
+    color: rgb(0, 17, 255);
+    background: rgb(227, 227, 231);
+    line-height: 20px;
+}
