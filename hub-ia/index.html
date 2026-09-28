@@ -13,6 +13,7 @@
             background-color: olive;
             color: aliceblue;
             font-family: Arial, sans-serif;
+            height: 300vh;
         }
 
         h1{
@@ -20,7 +21,7 @@
             margin-bottom: 20px;
         }
 
-        .conteiner{
+        .container{
             display: flex;
             gap: 15px;
             justify-content: center;
@@ -33,8 +34,63 @@
             height: 200px;
             background-color: black;
         }
-        
 
+        .container-position{
+            width: 100%;
+            height: 600px;
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .filho-tamanho{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            
+        }
+
+        .filho01__conatiner-position{
+            top: 0;
+            left: 0;
+        }
+
+        .filho02__conatiner-position{
+            top: 0;
+            right: 0;
+        }
+        
+        .filho03__conatiner-position{
+            bottom: 0;
+            left: 0;
+        }
+
+        .filho04__conatiner-position{
+            bottom: 0;
+            right: 0;
+        }
+
+        .whats{
+            width: 75px;
+            height: 75px;
+            background-color: rgb(7, 214, 35);
+            border-radius: 50%;
+            border: 5px solid #fff;
+
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .whats img{
+           width: 75px;
+           height: 75px; 
+        }
+
+
+
+
+        
 
 /* Base style for mobile devices */
 body {
@@ -43,15 +99,18 @@ body {
 }
 
 /* For devices with a minimum width of 768px (Medium) */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     background-color: blue;
     color: white;
   }
+  .box{
+    max-width: 365px;
+  }
 }
 
 /* For devices with a minimum width of 992px (Large) */
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   body {
     background-color: tan;
     color: black;
@@ -64,12 +123,24 @@ body {
 <body>
     <h1>isto é um teste de @media</h1>
     
-    <div class="conteiner">
+    <div class="container">
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
     </div>
+
+    <div class="container-position">
+        <div class="filho01__conatiner-position filho-tamanho"></div>
+        <div class="filho02__conatiner-position filho-tamanho"></div>
+        <div class="filho03__conatiner-position filho-tamanho"></div>
+        <div class="filho04__conatiner-position filho-tamanho"></div>
+    </div>
+
+    <div class="whats">
+        <img src="./img/whatssssss.png" alt="logo do Whatsapp">
+    </div>
+
 
 </body>
     </html>
