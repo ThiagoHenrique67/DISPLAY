@@ -1,0 +1,113 @@
+1. Estrutura e Configuração da Página
+Estas tags servem para configurar o documento e definir a sua estrutura básica:
+
+<!DOCTYPE html>: Define o tipo do documento e avisa ao navegador que você está usando a versão mais recente do HTML (HTML5).
+
+<html>: É a tag principal (ou "raiz") que envolve todo o conteúdo do seu arquivo HTML.
+
+<head>: Guarda as configurações e metadados da página que não aparecem visíveis para o usuário na tela.
+
+<meta>: Define configurações como a codificação de caracteres (charset="UTF-8" para acentuação correta) e a escala em telas móveis/celulares (viewport).
+
+<title>: Define o título da página que aparece na aba do navegador.
+
+<link>: Conecta arquivos externos ao HTML (no seu exemplo, é usado para puxar os arquivos de estilo CSS externos)
+
+<style>: Permite escrever regras e estilos de CSS diretamente no próprio arquivo HTML (CSS interno).
+
+<body>: Contém todo o corpo do site, ou seja, tudo o que o usuário efetivamente vê na tela.
+
+____________________________________________________________________________________________________
+2. Semântica de Layout
+Tags semânticas ajudam os navegadores e leitores de tela a entender qual é o papel de cada bloco da página:
+
+<header>: Representa o cabeçalho do site (geralmente contém a logo, título ou o menu topo).
+
+<nav>: Agrupa os links e elementos da barra de navegação principal.
+
+<main>: Delimita o conteúdo principal e exclusivo da página (deve existir apenas um <main> por arquivo)
+
+<section>: Define uma seção temática de conteúdo (por exemplo, uma seção de serviços, uma lista ou uma galeria).
+
+<footer>: Representa o rodapé do site (onde costumam ficar direitos autorais, contatos ou informações finais).
+____________________________________________________________________________________________________
+3. Conteúdo e Texto
+Tags utilizadas para estruturar, formatar e dar significado ao texto e links da página:
+
+<h1> e <h2>: Tags de cabeçalho/título. O <h1> é o título principal da página (maior importância) e o <h2> é usado para subtítulos.
+
+<p>: Representa um parágrafo de texto comum.
+
+<a>: Tag de link (âncora). Usa o atributo href para apontar o destino para onde o usuário será levado ao clicar.   
+
+<strong>: Usada para destacar um trecho de texto, deixando-o em negrito e indicando importância visual ou textual.
+
+<div>: É um bloco ou contêiner genérico. Não possui significado semântico específico, mas é muito usada para agrupar elementos e aplicar estilos via CSS
+____________________________________________________________________________________________________
+4. Listas
+Tags usadas para agrupar itens em forma de lista:
+
+<ul>: Cria uma lista não ordenada (Unordered List), onde os itens aparecem marcados com bolinhas/tópicos.
+
+<li>: Representa cada item individual da lista (List Item) e deve ficar dentro de tags como <ul> ou <ol>.
+____________________________________________________________________________________________________
+5. Elementos Interativos
+Tags que oferecem interatividade nativa sem precisar de JavaScript:
+
+<details>: Cria um bloco retrátil (conhecido como "sanfona" ou accordion) que o usuário pode clicar para abrir e fechar
+
+<summary>: Define o título visível do elemento <details> onde o usuário clica para expandir o conteúdo oculto
+
+
+____________________________________________________________________________________________________
+CSS
+1. Como o CSS é Aplicado (Formas de Uso)
+Nos seus comentários, são citadas as 3 formas de incluir CSS em um projeto:
+
+CSS Externo: O código fica em um arquivo separado .css e é chamado no <head> usando a tag <link>. É o modo mais organizado e recomendado.
+
+CSS Interno: As regras ficam dentro da tag <style> no <head> da própria página.
+
+CSS Inline: Aplicado diretamente no elemento HTML com o atributo style="". Possui a prioridade máxima sobre os outros estilos, mas deixa o código poluído se usado em excesso.
+
+2. Seletores (Como escolher o que estilizar)
+Para aplicar um estilo, você primeiro diz ao CSS quem você quer modificar:
+
+Seletor por elemento/tag (ex: html, body): Aplica o estilo para todas as tags daquele tipo na página
+
+Seletor por classe (começa com ponto ., ex: .caixa, .caixa-px): Aplica o estilo apenas para as tags que tiverem a propriedade class="..." com aquele nome.
+
+3. Propriedades de Estilo Encontradas no Seu Código
+Texto e Fontes
+
+font-size: Define o tamanho do texto (ex: 1.6rem, 20px ou 62.5%).
+
+font-family: Define a família da fonte (o tipo de letra usado). No seu código, foi usado system-ui, -apple-system, sans-serif, que instrui o navegador a usar a fonte padrão do sistema operacional do usuário.
+
+Espaçamento e Caixa (Box Model)
+
+padding: Cria um espaçamento interno, ou seja, um "respiro" dentro da caixa, empurrando o conteúdo para longe das bordas.
+
+margin-bottom: Cria uma margem externa na parte inferior, empurrando o próximo elemento para baixo.
+
+Cores, Bordas e Fundo
+background-color: Define a cor de fundo do elemento (usando códigos hexadecimais como #f8fafc ou #fee2e2).
+
+border: Cria uma borda em volta do elemento. Exige três informações juntas: espessura (2px), estilo (solid para linha contínua) e cor (#ef4444).
+
+border-radius: Arredonda os cantos da caixa (ex: 8px)
+
+4. Conceito Chave para a Prova: Unidades Medida (PX vs REM)
+O arquivo teste-acessebilidade.html trata exatamente do conceito de acessibilidade e uso de unidades:
+
+Pixels (px): É uma unidade de tamanho fixo. Se um usuário com problemas de visão aumentar o tamanho da fonte padrão do seu navegador, o texto em px não vai aumentar, prejudicando a leitura.
+
+REM: É uma unidade relativa ao tamanho da fonte raiz do navegador (html). Se o usuário aumentar as configurações do navegador, o texto em rem escala e aumenta automaticamente, tornando a página acessível.
+
+Truque do html { font-size: 62.5%; }: Por padrão, a maioria dos navegadores usa 16px como base. Ao definir o html em 62.5%, você transforma a base em 10px. Isso facilita muito a conta nos exercícios:
+
+1rem passa a valer 10px.
+1.6rem passa a valer 16px.
+
+
+
